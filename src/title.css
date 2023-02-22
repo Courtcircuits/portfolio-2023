@@ -1,0 +1,43 @@
+.title{
+    display:flex;
+    flex-direction: column;
+}
+
+
+.title h2{
+    color: #BAC4B8;
+    font-weight: normal;
+    font-size: 50pt;
+    margin-top:-20px;
+    margin-bottom: 0px;
+    padding: 0px;
+    width:fit-content;
+
+}
+
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.title .up{
+    font-family: NeueMontreal;
+}
+
+.title .bottom{
+    font-family: ClashDisplay;
+
+}
+
+.right .up{
+    font-family: SpaceGrotesk !important;
+    font-weight: 700;
+}
+.right .bottom{
+    font-family: NeueMontreal !important;
+}

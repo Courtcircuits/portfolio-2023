@@ -1,0 +1,25 @@
+#about{
+    font-family: NeueMontreal;
+    font-size: 25pt;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 80vh;
+    align-items: center;
+}
+
+#about-description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#about .side{
+    color: #BAC4B8;
+    width:30%;
+}
+#about .content-about{
+    color: #e3e3e3;
+    width:70%;
+}

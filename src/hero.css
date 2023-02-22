@@ -1,0 +1,46 @@
+#hero{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+    justify-content: center;
+}
+
+#hero-img img{
+    margin-top: 30px;
+    width:541px;
+    height:254px;
+    object-position: 0 100%;
+    object-fit: cover;
+    transition: height 0.5s;
+
+}
+
+#hero-img img:hover{
+    width:541px;
+    height:400px;
+    object-fit: cover;
+    object-position: 0 100%;
+
+    transition: height 0.5s;
+}
+
+#description{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-top:20px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#description p{
+    font-family: NeueMontreal;
+    font-weight: normal;
+    color:#BAC4B8;
+    text-decoration: none;
+    font-size:15pt;
+    width: 30%;
+}
