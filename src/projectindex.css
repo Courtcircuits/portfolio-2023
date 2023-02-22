@@ -67,3 +67,7 @@
     color: #BAC4B8;
     font-weight: lighter;
 }
+
+.content-about span p{
+    margin-bottom: 30px;
+}

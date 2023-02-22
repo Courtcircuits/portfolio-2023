@@ -23,3 +23,8 @@
     color: #e3e3e3;
     width:70%;
 }
+p{
+    animation-name: line_appear;
+    animation-duration: 1s;
+    margin: 0px;
+}

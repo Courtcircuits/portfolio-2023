@@ -36,11 +36,11 @@
     align-items: flex-end;
 }
 
-#description p{
+#description span p{
     font-family: NeueMontreal;
     font-weight: normal;
     color:#BAC4B8;
     text-decoration: none;
     font-size:15pt;
-    width: 30%;
+    width: 70%;
 }

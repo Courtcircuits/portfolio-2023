@@ -4,15 +4,22 @@
 }
 
 
+
+
+
+
 .title h2{
     color: #BAC4B8;
     font-weight: normal;
     font-size: 50pt;
-    margin-top:-20px;
-    margin-bottom: 0px;
+    margin: 0px;
     padding: 0px;
     width:fit-content;
-
+    animation-name: line_appear;
+    animation-duration: 1s;
+}
+.title span{
+    margin-bottom:-20px;
 }
 
 

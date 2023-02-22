@@ -26,8 +26,10 @@ class Hero extends React.Component{
         const scroll = window.scrollY;
         const index = Math.floor(scroll / 200) % 4;
         console.log(index);
+        if(index !== this.state.indexTitle){
+            this.setState({indexTitle: index});
 
-        this.setState({indexTitle: index});
+        }
     }
     render(){
         const listTitles = [{"up": "NETWORK", "down": "DEVELOPER"}, {"up": "DEVOPS", "down": "ENGINEER"}, {"up": "FULLSTACK", "down": "DEVELOPER"}, {"up": "SCRUM", "down": "MASTER"}];
@@ -40,7 +42,9 @@ class Hero extends React.Component{
                     <img src={hero_img} alt="hero-img" border="0"/>
                 </div>
                 <div id="description">
-                    <p>I HELP COMPANIES BUILD RELIABLE INFRASTRUCTURES</p>
+                    <span>
+                        <p>I HELP COMPANIES BUILD RELIABLE INFRASTRUCTURES</p>
+                    </span>
                     <Title up={listTitles[this.state.indexTitle].up} down={listTitles[this.state.indexTitle].down} alignright={true}/>
 
                 </div>
