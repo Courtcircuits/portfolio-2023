@@ -3,6 +3,11 @@
   src : url(./fonts/NeueMontreal-Medium.otf);
 }
 
+@font-face{
+  font-family: NeueMontrealLight;
+  src : url(./fonts/NeueMontreal-Light.otf);
+}
+
 @font-face {
   font-family: ClashDisplay;
     src: url(./fonts/ClashDisplay-Semibold.otf);

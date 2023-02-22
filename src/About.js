@@ -11,7 +11,7 @@ class About extends React.Component {
                     </div>
                     <div className="content-about">
                         <p>
-                            HI I’M TRISTAN ! I LIKE BUILDING BACKEND INFRASTRUCTURE FROM SCRATCH WHILE APPLYING DEVOPS
+                            HI I’M TRISTAN ! I LIKE TO BUILD BACKEND INFRASTRUCTURES FROM SCRATCH WHILE APPLYING DEVOPS
                             PHILOSOPHY.
 
                         </p>
