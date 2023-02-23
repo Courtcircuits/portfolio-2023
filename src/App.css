@@ -20,7 +20,7 @@
 
 .hide {
     animation-name: line_appear;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
 }
 
 span{
