@@ -1,4 +1,4 @@
-#about{
+#about {
     font-family: NeueMontreal;
     font-size: 25pt;
     display: flex;
@@ -9,22 +9,24 @@
     align-items: center;
 }
 
-#about-description{
+#about-description {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-#about .side{
+#about .side {
     color: #BAC4B8;
-    width:30%;
+    width: 30%;
 }
-#about .content-about{
+
+#about .content-about {
     color: #e3e3e3;
-    width:70%;
+    width: 70%;
 }
-p{
-    animation-name: line_appear;
-    animation-duration: 1s;
+
+p {
+
     margin: 0px;
 }
+

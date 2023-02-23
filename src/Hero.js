@@ -2,6 +2,8 @@ import React from 'react';
 import hero_img from './images/hero.png';
 import './hero.css';
 import Title from './Title.js';
+import AppearingLine from "./AppearingLine";
+
 class Hero extends React.Component{
     constructor(props) {
         super(props);
@@ -25,7 +27,6 @@ class Hero extends React.Component{
     changeTitle = () => {
         const scroll = window.scrollY;
         const index = Math.floor(scroll / 200) % 4;
-        console.log(index);
         if(index !== this.state.indexTitle){
             this.setState({indexTitle: index});
 
@@ -36,15 +37,19 @@ class Hero extends React.Component{
 
         return (
             <div id="hero">
-                <Title up="TRISTAN-MIHAI" down="RADULESCU" />
-
+                <AppearingLine>
+                    <Title up="TRISTAN-MIHAI" down="RADULESCU" />
+                </AppearingLine>
                 <div id="hero-img">
                     <img src={hero_img} alt="hero-img" border="0"/>
                 </div>
                 <div id="description">
-                    <span>
-                        <p>I HELP COMPANIES BUILD RELIABLE INFRASTRUCTURES</p>
-                    </span>
+                    <AppearingLine>
+                        <p>
+                        I HELP COMPANIES BUILD RELIABLE INFRASTRUCTURES
+                        </p>
+                    </AppearingLine>
+
                     <Title up={listTitles[this.state.indexTitle].up} down={listTitles[this.state.indexTitle].down} alignright={true}/>
 
                 </div>

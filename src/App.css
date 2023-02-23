@@ -12,6 +12,17 @@
     }
 }
 
+.reset{
+    animation-name: none;
+    animation-duration: 0s;
+    transform: translateY(100%);
+}
+
+.hide {
+    animation-name: line_appear;
+    animation-duration: 1s;
+}
+
 span{
     overflow: hidden;
     display:block;

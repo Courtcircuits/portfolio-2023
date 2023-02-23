@@ -1,5 +1,6 @@
 import React from "react";
 import "./projectindex.css";
+import AppearingLine from "./AppearingLine";
 
 class ProjectIndex extends React.Component {
   render(){
@@ -7,17 +8,21 @@ class ProjectIndex extends React.Component {
       const listProjects = projects.map((project, index) =>
           <div className="project-section" key={index}>
               <div className="index">
+
                   <p>{index}</p>
                   <div className="dotted-line"></div>
               </div>
-
-              <h4>{project}</h4>
+              <AppearingLine>
+                  <h4>{project}</h4>
+              </AppearingLine>
           </div>
       );
 
     return(
         <div id="project-index">
-            <h3>{this.props.name}</h3>
+            <AppearingLine>
+                <h3>{this.props.name}</h3>
+            </AppearingLine>
             <div className="project-list">
                 {listProjects}
             </div>

@@ -1,39 +1,38 @@
 import React from 'react';
 import './about.css';
+import AppearingLine from './AppearingLine';
 
-class About extends React.Component {
+
+function About() {
 
 
-    render() {
-        return (
-            <div id="about">
-                <div id="about-description">
-                    <div className="side">
-                        <span>
-                            <p>ABOUT</p>
-                        </span>
-                        <span>
-                            <p> ME...</p>
-                        </span>
+    return (
+        <div id="about">
+            <div id="about-description">
+                <div className="side">
+                    <AppearingLine>ABOUT</AppearingLine>
+                    <AppearingLine>ME</AppearingLine>
+                </div>
+                <div className="content-about">
 
-                    </div>
-                    <div className="content-about">
-                        <span>
-                            <p>
-                                HI I’M TRISTAN ! I LIKE TO BUILD BACKEND INFRASTRUCTURES FROM SCRATCH WHILE APPLYING DEVOPS
-                                PHILOSOPHY.
-                            </p>
-                        </span>
-                        <span>
-                            <p>
-                                WHEN I’M NOT CODING I MIGHT BE SKATEBOARDING OR PLAYING THE GUITAR WITH MY BAND.
-                            </p>
-                        </span>
-                    </div>
+
+                    <AppearingLine>
+                        <p>
+                        HI I’M TRISTAN !
+                        </p>
+                    </AppearingLine>
+                    <AppearingLine>
+                        <p>I LIKE TO BUILD BACKEND INFRASTRUCTURES FROM SCRATCH WHILE APPLYING DEVOPS
+                            PHILOSOPHY.</p>
+                    </AppearingLine>
+                    <AppearingLine>
+                        <p>WHEN I’M NOT CODING I MIGHT BE SKATEBOARDING OR PLAYING THE GUITAR WITH MY BAND.</p>
+                    </AppearingLine>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
+
 }
 
 export default About;
