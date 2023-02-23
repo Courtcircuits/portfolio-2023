@@ -1,15 +1,25 @@
 import React from 'react';
 
 import useElementOnScreen from './UseElementOnScreen';
-
+import {InView} from "react-intersection-observer";
 
 function AppearingLine(props) {
-    const [containerRef, isVisible] = useElementOnScreen({root: null, rootMargin: "0px", threshold: 0.5});
+    const [inView, setInView] = React.useState(false);
 
+    let className;
+
+    if (inView) {
+        className = "hide";
+
+    } else {
+        className = "reset";
+    }
 
     return (
-        <span ref={containerRef}>
-            <div className={isVisible ? "hide" : "reset"}>{props.children}</div>
+        <span>
+            <InView triggerOnce={true} onChange={setInView}>
+                <div className={className}>{props.children}</div>
+            </InView>
         </span>
     )
 
