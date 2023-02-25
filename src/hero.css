@@ -27,7 +27,7 @@
     transition: height 0.5s;
 }
 
-#description{
+#hero #description{
     display: flex;
     flex-direction: row;
     width:100%;

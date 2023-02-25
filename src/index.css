@@ -4,6 +4,11 @@
 }
 
 @font-face{
+  font-family: NeueMontrealRegular;
+  src : url(./fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face{
   font-family: NeueMontrealLight;
   src : url(./fonts/NeueMontreal-Light.otf);
 }

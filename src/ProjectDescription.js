@@ -8,10 +8,10 @@ class ProjectDescription extends React.Component{
         return(
             <div id="project-description">
                 <div>
-                    <h3>{this.props.name}</h3>
+                    <h3 onClick={this.props.handleClick}>{this.props.name}</h3>
                     <AppearingLine>{this.props.children}</AppearingLine>
                 </div>
-                <div>
+                <div onClick={this.props.handleClick}>
                     <img src={this.props.image} alt={this.props.name} />
                 </div>
             </div>

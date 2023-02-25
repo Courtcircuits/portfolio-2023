@@ -1,4 +1,4 @@
-.App{
+#App{
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -27,3 +27,4 @@ span{
     overflow: hidden;
     display:block;
 }
+

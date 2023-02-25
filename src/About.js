@@ -18,7 +18,7 @@ function About() {
 
                     <AppearingLine>
                         <p>
-                        HI I’M TRISTAN !
+                        HI, I’M TRISTAN !
                         </p>
                     </AppearingLine>
                     <AppearingLine>
