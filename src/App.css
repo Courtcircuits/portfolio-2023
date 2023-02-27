@@ -12,6 +12,24 @@
     }
 }
 
+@keyframes image_appear_right {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes image_appear_left {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
 .reset{
     animation-name: none;
     animation-duration: 0s;
@@ -22,6 +40,29 @@
     animation-name: line_appear;
     animation-duration: 0.7s;
 }
+
+.hideImageRight {
+    animation-name: image_appear_right;
+    animation-duration: 0.7s;
+}
+
+.hideImageLeft {
+    animation-name: image_appear_left;
+    animation-duration: 0.7s;
+}
+
+.resetImageRight{
+    animation-name: none;
+    animation-duration: 0s;
+    transform: translateX(100%);
+}
+
+.resetImageLeft{
+    animation-name: none;
+    animation-duration: 0s;
+    transform: translateX(-100%);
+}
+
 
 span{
     overflow: hidden;

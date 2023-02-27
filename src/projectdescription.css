@@ -1,5 +1,16 @@
+@keyframes image_appear {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0%);
+        opacity: 1;
+    }
+
+}
 #project-description{
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -25,7 +36,6 @@
 
 #project-description img{
     height: 70vh;
-    width: 90%;
     object-fit: contain;
 }
 
@@ -46,4 +56,10 @@
     text-decoration: none;
     font-size:15pt;
     width: 70%;
+}
+
+#project-description span img{
+    animation-name: image_appear;
+    animation-duration: 0.7s;
+
 }

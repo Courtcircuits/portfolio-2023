@@ -3,6 +3,7 @@ import hero_img from './images/hero.png';
 import './hero.css';
 import Title from './Title.js';
 import AppearingLine from "./AppearingLine";
+import AppearingImage from "./AppearingImage";
 
 class Hero extends React.Component{
     constructor(props) {
@@ -41,7 +42,7 @@ class Hero extends React.Component{
                     <Title up="TRISTAN-MIHAI" down="RADULESCU" />
                 </AppearingLine>
                 <div id="hero-img">
-                    <img src={hero_img} alt="hero-img" border="0"/>
+                    <AppearingImage path={hero_img} alt="hero-img" direction="left"/>
                 </div>
                 <div id="description">
                     <AppearingLine>

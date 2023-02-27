@@ -1,6 +1,5 @@
 import React from 'react';
 
-import useElementOnScreen from './UseElementOnScreen';
 import {InView} from "react-intersection-observer";
 
 function AppearingLine(props) {

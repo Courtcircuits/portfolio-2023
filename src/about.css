@@ -25,8 +25,24 @@
     width: 70%;
 }
 
+#about:hover .content-about {
+    backdrop-filter: blur(2px);
+}
+
 p {
 
     margin: 0px;
 }
 
+#about #image{
+    position: absolute;
+    z-index:-1;
+    transform: translateY(50%);
+    filter: blur(1px) grayscale(1);
+    transition: filter 0.5s;
+}
+
+#about:hover #image{
+    filter: blur(1px) grayscale(0);
+    transition: filter 0.5s;
+}

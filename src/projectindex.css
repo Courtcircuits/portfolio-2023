@@ -71,3 +71,9 @@
 .content-about span p{
     margin-bottom: 30px;
 }
+
+.project-link{
+    display: block;
+    text-decoration: none;
+    width:100%;
+}
