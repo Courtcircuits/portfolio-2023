@@ -42,6 +42,17 @@ p {
     transition: filter 0.5s;
 }
 
+
+#about #image img{
+    height:300px;
+}
+
+@media screen and (max-width: 1750px) {
+    #about #image img{
+        height: 200px;
+    }
+}
+
 #about:hover #image{
     filter: blur(1px) grayscale(0);
     transition: filter 0.5s;

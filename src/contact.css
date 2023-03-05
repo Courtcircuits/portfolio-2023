@@ -1,0 +1,75 @@
+#contact{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#contact p i{
+    margin-bottom: 100px;
+}
+
+#contact p{
+    font-family: NeueMontreal;
+    font-weight: normal;
+    color:#BAC4B8;
+    text-decoration: none;
+    font-size:20pt;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+}
+
+#contact h3{
+    font-family: NeueMontrealBold;
+    font-weight: bold;
+    width: 90%;
+    text-transform: uppercase;
+    color: transparent;
+    font-size:6em;
+    margin: 0px 0px 20px;
+    -webkit-text-stroke: 1px #BAC4B8;
+    transition: all 0.5s;
+}
+
+#contact h3:hover{
+    color: #BAC4B8;
+    -webkit-text-stroke: 0px #BAC4B8;
+    transition: all 0.5s;
+}
+
+#contact #socials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact #socials a{
+    margin: 20px 0px;
+    color: #BAC4B8;
+    font-family: NeueMontrealRegular;
+    font-size: 6em;
+    text-decoration: none;
+    position: relative;
+}
+
+#contact #socials a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #BAC4B8;
+
+
+    transition: all 0.5s;
+}
+
+#contact #socials a:hover::after{
+    width: 100%;
+    transition: all 0.5s;
+}

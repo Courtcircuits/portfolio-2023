@@ -21,11 +21,11 @@
 
 }
 
-#project-description div:nth-of-type(1){
+#project-description #infos{
     width: 70%;
 }
 
-#project-description div:nth-of-type(1):hover h3{
+#project-description #infos:hover h3{
     color: #BAC4B8;
     -webkit-text-stroke: 0px #BAC4B8;
 }
@@ -35,12 +35,12 @@
 }
 
 #project-description img{
-    height: 70vh;
+    height: 100%;
     object-fit: contain;
 }
 
 #project-description h3{
-    font-family: ClashDisplay;
+    font-family: NeueMontrealBold;
     font-weight: bold;
     -webkit-text-stroke: 0.5px #BAC4B8;
     color: transparent;
@@ -62,4 +62,22 @@
     animation-name: image_appear;
     animation-duration: 0.7s;
 
+}
+
+#project-description .overflow{
+    overflow: hidden;
+    height: 100vh;
+    width:100%;
+
+    transition: transform 0.7s;
+}
+
+#project-description .overflow:hover img{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+#project-description .overflow img{
+
+    transition: transform 0.3s;
 }

@@ -249,16 +249,10 @@
 
 }
 
-@media screen and (max-width:640px) {
+@media screen and ((max-width:640px) or (max-height:600px)){
   #project-detail #content #description{
     height: 70vh;
   }
-}
-
-@media screen and (max-height:600px){
-    #project-detail #content #description{
-        height: 70vh;
-    }
 }
 
 #project-detail #content #description #text-description{

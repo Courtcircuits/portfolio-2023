@@ -30,6 +30,9 @@ import mobileFakex from "./images/fakex/mobile.png";
 import accueilMami from "./images/minitel/accueilMinitel.png";
 import annuaireMami from "./images/minitel/annuaire.png";
 import productMami from "./images/minitel/search.png";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Background from "./Background";
 
 
 const imagesCompanyPoll = [{name: "Home", image: accueilCompanypoll}, {
@@ -107,6 +110,7 @@ class App extends React.Component {
 
         return (
             <div id="App">
+                <Background/>
                 <Menu/>
                 <Hero/>
                 <About/>
@@ -143,6 +147,9 @@ class App extends React.Component {
                 </ProjectDescription>
 
                 {projects[this.state.projectVisible.index]}
+
+                <Contact mail={<h3>radulescutristan<br/>@proton.me</h3>}/>
+                <Footer/>
             </div>
         );
 

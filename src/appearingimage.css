@@ -1,0 +1,45 @@
+@keyframes circle_appear {
+    0%{
+        transform: scale(0) translate(-50%, -50%);
+    }
+    100%{
+        transform: scale(1) translate(-50%, -50%);
+    }
+
+}
+
+.image{
+    display: block;
+    cursor: none;
+}
+
+
+
+#cursor{
+    position: fixed;
+    animation: circle_appear 0.5s ease-in-out;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(227, 227, 227, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 100%;
+
+}
+
+#cursor p{
+    width: 70%;
+    text-align: center;
+    font-family: NeueMontreal;
+    color: #171717 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+#cursor p:active{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+

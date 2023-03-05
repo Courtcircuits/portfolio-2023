@@ -17,7 +17,7 @@
     transition: height 0.5s;
 
 }
-
+/*
 #hero-img img:hover{
     width:541px;
     height:400px;
@@ -25,7 +25,7 @@
     object-position: 0 100%;
 
     transition: height 0.5s;
-}
+}*/
 
 #hero #description{
     display: flex;

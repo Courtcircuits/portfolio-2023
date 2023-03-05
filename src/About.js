@@ -48,7 +48,7 @@ class About extends React.Component{
                     </div>
                 </div>
                 <div id="image">
-                    <img height="300px" src={this.state.viewingGif ? gif : image} alt="black april"/>
+                    <img src={this.state.viewingGif ? gif : image} alt="black april"/>
                 </div>
             </div>
         )

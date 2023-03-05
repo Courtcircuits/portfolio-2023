@@ -42,7 +42,7 @@ class Hero extends React.Component{
                     <Title up="TRISTAN-MIHAI" down="RADULESCU" />
                 </AppearingLine>
                 <div id="hero-img">
-                    <AppearingImage path={hero_img} alt="hero-img" direction="left"/>
+                    <AppearingImage text="Hi there !" path={hero_img} alt="hero-img" direction="left"/>
                 </div>
                 <div id="description">
                     <AppearingLine>
