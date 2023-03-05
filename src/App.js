@@ -119,7 +119,9 @@ class App extends React.Component {
                                     name={<div><AppearingLine>COMPANY</AppearingLine><AppearingLine>POLL</AppearingLine>
                                     </div>}
                                     link="COMPANY POLL"
-                                    image={companyPollIllustration}>
+                                    image={companyPollIllustration}
+                                    tags = {["Java", "SQL","El-Gamal", "Cybersec"]}
+                >
                     <p>A SECURED E-VOTE APPLICATION IN JAVA FOR SMALL COMPANIES</p>
                 </ProjectDescription>
                 <ProjectDescription handleClick={this.focusProject.bind(this, 1)}
@@ -127,6 +129,7 @@ class App extends React.Component {
                                     name={<div><AppearingLine>FAKEX</AppearingLine>
                                     </div>}
                                     image={fakexIllustration}
+                                    tags = {["PHP", "SQL", "HTML/CSS", "JavaScript"]}
                                     >
                     <p>AN E-COMMERCE PLATFORM TO SELL VINTAGE SHOES</p>
                 </ProjectDescription>
@@ -135,14 +138,18 @@ class App extends React.Component {
                                     name={<div><AppearingLine>GNSS</AppearingLine><AppearingLine>SAFE</AppearingLine>
                                     </div>}
                                     link="GNSSAFE"
-                                    image={gnssSafeIllustration}>
+                                    image={gnssSafeIllustration}
+                                    tags = {["Startup", "Hackathon", "Cybersec","Data science"]}
+                >
                     <p>A GEOLOCATION API DETECTING SPOOFING HACKS</p>
                 </ProjectDescription>
                 <ProjectDescription handleClick={this.focusProject.bind(this, 3)}
                                     name={<div><AppearingLine>MAMITEL</AppearingLine>
                                     </div>}
                                     link="MAMITEL"
-                                    image={mamiIllustration}>
+                                    image={mamiIllustration}
+                                    tags = {["Hackathon", "JavaScript", "HTML/CSS","UI/UX"]}
+                >
                     <p>A MINIMALIST BROWSER INTERFACE FOR YOUR GRANNY</p>
                 </ProjectDescription>
 

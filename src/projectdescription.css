@@ -30,7 +30,47 @@
     -webkit-text-stroke: 0px #BAC4B8;
 }
 
-#project-description div:nth-of-type(2){
+#project-description #infos #tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#project-description #infos #tags .tag{
+    padding: 10px 15px;
+    border:1px solid #BAC4B8;
+    margin-right: 5px;
+    border-radius: 100px;
+    transition: 0.3s;
+
+}
+
+#project-description #infos #tags .tag:hover{
+    background-color: #BAC4B8;
+    transition: 0.3s;
+}
+
+#project-description #infos #tags .tag:hover p{
+    color: #1A1A1A;
+    transition: 0.3s;
+
+}
+
+#project-description #infos #tags .tag p{
+    font-family: NeueMontrealRegular;
+    width:100%;
+    font-size: 10pt;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+
+}
+
+#project-description #illustration{
     width: 40%;
 }
 
@@ -44,7 +84,7 @@
     font-weight: bold;
     -webkit-text-stroke: 0.5px #BAC4B8;
     color: transparent;
-    font-size: 50pt;
+    font-size: 70pt;
     margin: 0px 0px 20px;
 
 }
@@ -54,7 +94,7 @@
     font-weight: normal;
     color:#BAC4B8;
     text-decoration: none;
-    font-size:15pt;
+    font-size:20pt;
     width: 70%;
 }
 

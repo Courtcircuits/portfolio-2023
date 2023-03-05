@@ -45,6 +45,10 @@ class About extends React.Component{
                         <AppearingLine>
                             <p>WHEN I’M NOT CODING I MIGHT BE SKATEBOARDING OR PLAYING THE GUITAR WITH MY BAND.</p>
                         </AppearingLine>
+
+                        <AppearingLine>
+                            <a href="cv4.pdf">Get my resume right here !</a>
+                        </AppearingLine>
                     </div>
                 </div>
                 <div id="image">

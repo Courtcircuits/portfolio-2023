@@ -36,6 +36,7 @@
     font-family: NeueMontreal;
     color: #171717 !important;
     transition: all 0.2s ease-in-out;
+    font-size: 15pt !important;
 }
 
 #cursor p:active{
