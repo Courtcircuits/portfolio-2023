@@ -1,5 +1,5 @@
 import React from 'react';
-import hero_img from './images/hero.png';
+import hero_img from './images/hero.webp';
 import './hero.css';
 import Title from './Title.js';
 import AppearingLine from "./AppearingLine";

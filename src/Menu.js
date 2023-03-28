@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './images/mihai.png';
+import logo from './images/mihai.webp';
 import './menu.css'
 
 class Menu extends React.Component {

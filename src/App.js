@@ -6,33 +6,38 @@ import About from './About.js';
 import ProjectIndex from './ProjectIndex.js';
 import ProjectDescription from "./ProjectDescription";
 
-import companyPollIllustration from "./images/mains.png";
-import fakexIllustration from "./images/shoefakex.png";
-import gnssSafeIllustration from "./images/gns.png";
-import mamiIllustration from "./images/mamimock.png";
+import companyPollIllustration from "./images/mains.webp";
+import fakexIllustration from "./images/shoefakex.webp";
+import gnssSafeIllustration from "./images/gns.webp";
+import mamiIllustration from "./images/mamimock.webp";
 
 import AppearingLine from "./AppearingLine";
 import ProjectDetail from "./ProjectDetail";
 
 //images from company-poll
-import accueilCompanypoll from "./images/company-poll/Accueil.png";
-import adminCompanypoll from "./images/company-poll/Dashboard - Admin.png";
-import adminVoteCompanypoll from "./images/company-poll/Dashboard - Admin-1.png";
-import employeCompanypoll from "./images/company-poll/Dashboard - Employé.png";
-import employeVoteCompanypoll from "./images/company-poll/Dashboard - Employé - vote.png";
+import accueilCompanypoll from "./images/company-poll/Accueil.webp";
+import adminCompanypoll from "./images/company-poll/Dashboard - Admin.png.webp";
+import adminVoteCompanypoll from "./images/company-poll/Dashboard - Admin-1.webp";
+import employeCompanypoll from "./images/company-poll/Dashboard - Employé.webp";
+import employeVoteCompanypoll from "./images/company-poll/Dashboard - Employé -vote.webp";
 
 //images from fakex
-import accueilFakex from "./images/fakex/accueil.png";
-import productFakex from "./images/fakex/product.png";
-import mobileFakex from "./images/fakex/mobile.png";
+import accueilFakex from "./images/fakex/accueil.webp";
+import productFakex from "./images/fakex/product.webp";
+import mobileFakex from "./images/fakex/mobile.webp";
 
 //images from mamitel
-import accueilMami from "./images/minitel/accueilMinitel.png";
-import annuaireMami from "./images/minitel/annuaire.png";
-import productMami from "./images/minitel/search.png";
+import accueilMami from "./images/minitel/accueilMinitel.webp";
+import annuaireMami from "./images/minitel/annuaire.webp";
+import productMami from "./images/minitel/search.webp";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Background from "./Background";
+
+//images from gnss-safe
+import marchesgnss from "./images/gnssafe/gnssafe.webp";
+import pitchgnss from "./images/gnssafe/pitch.webp";
+import screengnss from "./images/gnssafe/screen_actinspace.webp";
 
 
 const imagesCompanyPoll = [{name: "Home", image: accueilCompanypoll}, {
@@ -46,6 +51,8 @@ const imagesCompanyPoll = [{name: "Home", image: accueilCompanypoll}, {
 const imagesFakex = [{name: "Home", image: accueilFakex}, {name: "Product", image: productFakex}, {name:"Mobile", image:mobileFakex}];
 
 const imagesMami = [{name: "Home", image: accueilMami}, {name: "Annuaire", image: annuaireMami}, {name:"Search", image:productMami}];
+
+const imagesGnss = [{name: "International Finals at Cannes", image: marchesgnss}, {name: "Finals at Montpellier", image: pitchgnss}, {name:"In The News", image:screengnss}];
 
 class App extends React.Component {
 
@@ -85,13 +92,13 @@ class App extends React.Component {
                 <b>Fakex</b> is a website inspired by Vinted and targetting shoe customers/sellers. Fakex wants to propose the best vintages shoes on the internet for a fair price.
             </ProjectDetail>,
 
-            <ProjectDetail color={{background : "rgba(182, 228, 189, 0.69)", color : "#272727"}} name="GNSSAFE"
-                           link={<a style={{color:"#272727"}} href="https://www.entreprendre-montpellier.com/fr/actualites/retour-sur-la-5eme-edition-dactinspace-2022">We are on the news</a>}
-                           category="Side project" screenshots={imagesFakex}
+            <ProjectDetail color={{background : "rgba(60,92,171,0.69)", color : "#ffffff"}} name="GNSSAFE"
+                           link={<a style={{color:"#ffffff"}} href="https://www.entreprendre-montpellier.com/fr/actualites/retour-sur-la-5eme-edition-dactinspace-2022">We are on the news</a>}
+                           category="Side project" screenshots={imagesGnss}
                            role="Entrepreneur & Data scientist"
                            className={this.state.projectVisible.index === 1 ? null : "hideProject"} year="Work in progress"
                            handleClick={this.unfocusProject.bind(this)}>
-                <b>GNSSAFE</b> is an anti-spoofing geolocation. Thanks to a secret algorithm, we are able to detect people using GPS emulators. GNSSAFE is a startup founded after the Hackathon Act In Space. My team and I were representing Montpellier during Act In Space’s finals.
+                <b>GNSSAFE</b> is an anti-spoofing geolocation SaaS. Thanks to a secret algorithm, we are able to detect people using GPS emulators. GNSSAFE is a startup founded after the Hackathon Act In Space. My team and I were representing Montpellier during Act In Space’s finals.
             </ProjectDetail>,
             <ProjectDetail color={{background : "rgba(3, 1, 44, 0.69)", color : "#FEBBED"}} name="MAMITEL"
                            link={<a style={{color:"#FEBBED"}} href="https://milou666.github.io/">Visit website</a>}

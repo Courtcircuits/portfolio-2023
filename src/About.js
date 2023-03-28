@@ -2,8 +2,8 @@ import React from 'react';
 import './about.css';
 import AppearingLine from './AppearingLine';
 
-import image from './images/blackapril.png';
-import gif from './images/portfolio.gif';
+import image from './images/blackapril.webp';
+import gif from './images/portfolio.webp';
 
 
 class About extends React.Component{
