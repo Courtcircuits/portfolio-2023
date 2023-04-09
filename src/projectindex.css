@@ -15,6 +15,17 @@
     margin-bottom: 100px;
 }
 
+@media screen and (max-width: 768px){
+    #project-index h3{
+        font-family: NeueMontreal;
+        color: #BAC4B8;
+        font-size: 20pt;
+        width: 30%;
+        font-weight: normal;
+        margin-bottom: 100px;
+    }
+}
+
 .project-list{
     width: 100%;
 }
@@ -27,7 +38,17 @@
     font-size:60pt;
     padding: 0px;
     margin: 0px 0px 50px;
+}
 
+@media screen and (max-width: 768px){
+    .project-list .project-section{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size:30pt;
+        padding: 0px;
+        margin: 0px 0px 50px;
+    }
 }
 
 .project-list .project-section .index{

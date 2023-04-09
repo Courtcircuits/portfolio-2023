@@ -39,6 +39,10 @@ import marchesgnss from "./images/gnssafe/gnssafe.webp";
 import pitchgnss from "./images/gnssafe/pitch.webp";
 import screengnss from "./images/gnssafe/screen_actinspace.webp";
 
+//supabase
+import {createClient} from '@supabase/supabase-js';
+
+
 
 const imagesCompanyPoll = [{name: "Home", image: accueilCompanypoll}, {
     name: "Admin pannel",
@@ -53,6 +57,9 @@ const imagesFakex = [{name: "Home", image: accueilFakex}, {name: "Product", imag
 const imagesMami = [{name: "Home", image: accueilMami}, {name: "Annuaire", image: annuaireMami}, {name:"Search", image:productMami}];
 
 const imagesGnss = [{name: "International Finals at Cannes", image: marchesgnss}, {name: "Finals at Montpellier", image: pitchgnss}, {name:"In The News", image:screengnss}];
+
+//const supabase = createClient(process.env.API_ENDPOINT, 'public-anon-key');
+
 
 class App extends React.Component {
 
@@ -72,6 +79,7 @@ class App extends React.Component {
     }
 
     render() {
+        console.log(process.env.API_ENDPOINT);
         const projects = [<ProjectDetail color={{background: "rgba(88, 70, 190, 0.69)", color : "white"}} name="Company Poll"
                                          link={<a style={{color:"white"}}  href="https://github.com/CompanyPoll">Visit source code</a>}
                                          category="School project" screenshots={imagesCompanyPoll}

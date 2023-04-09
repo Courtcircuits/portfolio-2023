@@ -1,62 +1,61 @@
 @keyframes background_appear {
-    0%{
+    0% {
         transform: translateX(100%);
     }
 
-    100%{
+    100% {
         transform: translateX(0%);
     }
 }
 
 @keyframes line_appear_slow {
-    0%{
+    0% {
         transform: translateY(100%);
     }
-    70%{
+    70% {
         transform: translateY(100%);
     }
-    100%{
+    100% {
         transform: translateY(0%);
     }
 }
 
 @keyframes opacity_slow_appear {
-    0%{
+    0% {
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
 
 
-
 @keyframes opacity_slow_appear_reverse {
-    0%{
+    0% {
         opacity: 1;
     }
 
-    100%{
+    100% {
         opacity: 0;
     }
 }
 
 @keyframes focus {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+    50% {
         transform: scale(0.9);
     }
-    100%{
-        transform: scale(1) ;
+    100% {
+        transform: scale(1);
     }
 }
 
-.hideProject{
+.hideProject {
     z-index: -1 !important;
 }
 
@@ -73,6 +72,13 @@
     padding-left: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    #project-detail {
+        padding-left: 20px;
+    }
+}
+
+
 #project-detail #header {
     padding-right: 100px;
     display: flex;
@@ -86,10 +92,11 @@
 
 }
 
-@media screen and (max-width:640px){
-  #project-detail #header{
-    font-size: 15px;
-  }
+@media screen and (max-width: 640px) {
+    #project-detail #header {
+        font-size: 20px;
+        padding-right: 40px;
+    }
 }
 
 #project-detail #header ul {
@@ -97,18 +104,27 @@
     flex-direction: row;
     list-style-type: none;
     padding: 0px;
-    overflow:hidden;
-
-
+    overflow: hidden;
 }
 
-#project-detail #close{
+@media screen and (max-width: 768px) {
+    #project-detail #header ul {
+        flex-direction: column;
+    }
+}
+
+#project-detail #close {
     overflow: hidden;
 }
 
 #project-detail #header ul li {
     margin-right: 70px;
+}
 
+@media screen and (max-width: 768px) {
+    #project-detail #header ul li {
+        margin-right: 0px;
+    }
 }
 
 
@@ -125,49 +141,70 @@
     color: #BAC4B8;
 }
 
-#project-detail #content{
+#project-detail #content {
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    #project-detail #content {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #project-detail #content #screenshots {
     display: flex;
     flex-direction: column;
     position: fixed;
-    height:80%;
-    width:100%;
+    height: 80%;
+    width: 100%;
 
 }
 
-.hide_description{
+.hide_description {
     animation-name: opacity_slow_appear_reverse;
     animation-duration: 0.7s;
     opacity: 0;
 }
 
-.unfocus{
-    left:65%;
+.unfocus {
+    left: 65%;
     transition: left 0.7s;
 }
 
-.unfocus h4{
+@media screen and (max-width: 768px) {
+    .unfocus {
+        left: 70%;
+    }
+}
+
+.unfocus h4 {
     display: none;
 }
 
 
-#project-detail #select-screen ol .selected{
+#project-detail #select-screen ol .selected {
     opacity: 1;
-    transition:all linear 0.02s;
+    transition: all linear 0.02s;
 }
-#project-detail #select-screen ol{
-    transition:all linear 0.02s;
+
+#project-detail #select-screen ol {
+    transition: all linear 0.02s;
     opacity: 0.7;
 
 }
+
 #project-detail #content #screenshots #screenshot-container {
     overflow: hidden;
     height: 70%;
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    #project-detail #content #screenshots #screenshot-container {
+        height: 50%;
+    }
 }
 
 #project-detail #content #screenshots #screenshot-container ul {
@@ -176,50 +213,51 @@
     height: 100%;
 
 }
-#project-detail #content #screenshots #screenshot-container ul li{
+
+#project-detail #content #screenshots #screenshot-container ul li {
     list-style-type: none;
     margin-right: 20px;
     height: 100%;
 }
 
-#project-detail #content #screenshots #screenshot-container ul li img{
-    height:100%;
+#project-detail #content #screenshots #screenshot-container ul li img {
+    height: 100%;
 
 }
 
-.appear_slow_line{
+.appear_slow_line {
     animation-name: line_appear_slow;
     animation-duration: 1.6s;
 }
 
-.fullFocus{
+.fullFocus {
     opacity: 1;
     transition: opacity 0.7s;
 }
-.halfFocus{
+
+.halfFocus {
     opacity: 0.2;
     transition: opacity 0.7s;
 }
 
 
-
-.focus{
+.focus {
 
     transition: left 0.7s;
-    left:0px;
+    left: 0px;
 
 }
 
-.focus ul{
+.focus ul {
     animation-name: focus;
     animation-duration: 0.7s;
 }
 
-.focus span{
+.focus span {
     overflow: hidden;
 }
 
-.focus h4{
+.focus h4 {
     animation-name: line_appear;
     animation-duration: 0.7s;
     margin: 0px;
@@ -228,18 +266,18 @@
     font-size: 40px;
 }
 
-.appear_opacity{
+.appear_opacity {
     animation-name: opacity_slow_appear;
     animation-duration: 1.4s;
 }
 
-.appear_background{
+.appear_background {
     animation-name: background_appear;
     animation-duration: 0.7s;
 }
 
 
-#project-detail #content #description{
+#project-detail #content #description {
     width: 55%;
     font-family: NeueMontrealRegular;
     display: flex;
@@ -249,53 +287,58 @@
 
 }
 
-@media screen and (max-width:640px) {
-  #project-detail #content #description{
-    height: 70vh;
-  }
+@media screen and (max-width: 768px) {
+    #project-detail #content #description {
+        width: 75%;
+        height: 100%;
+    }
 }
 
-@media screen and (max-height:600px){
-    #project-detail #content #description{
+@media screen and (max-width: 640px) {
+    #project-detail #content #description {
         height: 70vh;
     }
 }
 
-#project-detail #content #description #text-description{
+@media screen and (max-height: 600px) {
+    #project-detail #content #description {
+        height: 70vh;
+    }
+}
+
+#project-detail #content #description #text-description {
     font-size: 40px;
 }
 
-#project-detail #content #description #details{
+#project-detail #content #description #details {
     font-size: 20px;
 }
 
 
-@media screen and (max-height:600px){
-  #project-detail #content #description #text-description{
-    font-size: 30px;
-  }
+@media screen and (max-height: 600px) {
+    #project-detail #content #description #text-description {
+        font-size: 30px;
+    }
 }
 
-@media screen and (max-width:640px){
-  #project-detail #content #description #text-description{
-    font-size: 25px;
-  }
-  
-  #project-detail #content #description #details{
-    font-size: 15px;
-  }
+@media screen and (max-width: 640px) {
+    #project-detail #content #description #text-description {
+        font-size: 25px;
+    }
+
+    #project-detail #content #description #details {
+        font-size: 15px;
+    }
 
 }
 
 
-
-
-#project-detail #content #description #details ul{
+#project-detail #content #description #details ul {
     list-style-type: none;
     padding: 0px;
 }
 
-#project-detail #content #description #details ul li{
+#project-detail #content #description #details ul li {
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -306,11 +349,12 @@
 }
 
 
-#project-detail #screenshots ol{
+#project-detail #screenshots ol {
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
+
 #project-detail #screenshots ol li {
     font-size: 30px;
     opacity: 0.7;

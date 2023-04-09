@@ -18,10 +18,29 @@
     animation-name: line_appear;
     animation-duration: 1s;
 }
+
+@media screen and (max-width: 768px){
+    .title h2{
+        color: #BAC4B8;
+        font-weight: normal;
+        font-size: 30pt;
+        margin: 0px;
+        padding: 0px;
+        width:fit-content;
+        animation-name: line_appear;
+        animation-duration: 1s;
+    }
+}
+
 .title span{
     margin-bottom:-20px;
 }
 
+@media screen and (max-width: 768px){
+    .title span{
+        margin-bottom:-10px;
+    }
+}
 
 
 .right{
