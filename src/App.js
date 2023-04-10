@@ -86,7 +86,7 @@ class App extends React.Component {
                                          role="Scrum Master & Back end engineer"
                                          className={this.state.projectVisible.index === 0 ? null : "hideProject"}
                                          year="2022-2023" handleClick={this.unfocusProject.bind(this)}>
-            <b>Company Poll</b> is a vote application making companies decision taking more easy thanks to a user
+            <b>Company Poll</b> is a vote application making companies decision taking easier thanks to a user
             friendly interface.
             Each vote is encrypted thanks to the <u>El-Gamal</u> algorithm. It was the occasion to also use the <u>Shamir
             secret sharing technic.</u>
@@ -97,7 +97,7 @@ class App extends React.Component {
                            role="Designer & Back-end engineer"
                            className={this.state.projectVisible.index === 1 ? null : "hideProject"} year="2022-2023"
                            handleClick={this.unfocusProject.bind(this)}>
-                <b>Fakex</b> is a website inspired by Vinted and targetting shoe customers/sellers. Fakex wants to propose the best vintages shoes on the internet for a fair price.
+                <b>Fakex</b> is a website inspired by Vinted and targetting shoe customers and sellers. Fakex wants to propose the best vintages shoes on the internet for a fair price.
             </ProjectDetail>,
 
             <ProjectDetail color={{background : "rgba(60,92,171,0.69)", color : "#ffffff"}} name="GNSSAFE"
@@ -135,7 +135,7 @@ class App extends React.Component {
                                     </div>}
                                     link="COMPANY POLL"
                                     image={companyPollIllustration}
-                                    tags = {["Java", "SQL","El-Gamal", "Cybersec"]}
+                                    tags = {["Java", "SQL","Cryptography", "Cybersec"]}
                 >
                     <p>A SECURED E-VOTE APPLICATION IN JAVA FOR SMALL COMPANIES</p>
                 </ProjectDescription>
