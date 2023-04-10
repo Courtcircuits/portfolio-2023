@@ -10,7 +10,7 @@ class Menu extends React.Component {
                     <div id="menu-content">
                     <img src={logo} alt="Mihai"/>
                     <ul>
-                        <li><a href="#work">Work</a></li>
+                        <li><a href="#COMPANY POLL">Work</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>

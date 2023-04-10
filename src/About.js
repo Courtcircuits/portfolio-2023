@@ -47,7 +47,7 @@ class About extends React.Component{
                         </AppearingLine>
 
                         <AppearingLine>
-                            <a href="cv4.pdf">Get my resume right here !</a>
+                            <a href="https://drive.google.com/file/d/1JD7NfW4xhqVQx9K-G89ZB3JQKTgLBWyw/view?usp=sharing">Get my resume right here !</a>
                         </AppearingLine>
                     </div>
                 </div>
