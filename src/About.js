@@ -39,8 +39,8 @@ class About extends React.Component{
                             </p>
                         </AppearingLine>
                         <AppearingLine>
-                            <p>I LIKE TO BUILD BACKEND INFRASTRUCTURES FROM SCRATCH WHILE APPLYING DEVOPS
-                                PHILOSOPHY.</p>
+                            <p>I LIKE TO BUILD <b>BACKEND INFRASTRUCTURES</b> FROM SCRATCH WHILE APPLYING <b>DEVOPS
+                                PHILOSOPHY.</b></p>
                         </AppearingLine>
                         <AppearingLine>
                             <p>WHEN I’M NOT CODING I MIGHT BE SKATEBOARDING OR PLAYING THE GUITAR WITH MY BAND.</p>

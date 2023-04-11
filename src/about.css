@@ -79,7 +79,7 @@
 }
 
 p {
-
+    color: #BAC4B8;
     margin: 0px;
 }
 
@@ -142,6 +142,11 @@ p {
     background-color: #1a1a1a;
     transition: width 0.5s;
     z-index: 4;
+}
+
+#about b{
+    color : rgb(255, 255, 255);
+    font-weight: bolder;
 }
 
 #about a:hover::before{
