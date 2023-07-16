@@ -216,6 +216,12 @@ class App extends React.Component {
           >
             Visit website
           </a>
+         <a
+            style={{ color: "#24EE76" , marginLeft: "30px"}}
+            href="https://github.com/Courtcircuits/HackTheCrous"
+          >
+          Source code
+          </a>
 </div>
         }
         category="Side project"
