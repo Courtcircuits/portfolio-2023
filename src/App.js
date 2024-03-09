@@ -49,7 +49,6 @@ import pitchgnss from "./images/gnssafe/pitch.webp";
 import screengnss from "./images/gnssafe/screen_actinspace.webp";
 
 //supabase
-import { createClient } from "@supabase/supabase-js";
 
 const imagesCompanyPoll = [
   { name: "Home", image: accueilCompanypoll },
@@ -212,13 +211,13 @@ class App extends React.Component {
           </a>
           <a
             style={{ color: "#24EE76" , marginLeft: "30px"}}
-            href="https://hack-the-crous-96y4.vercel.app/"
+            href="https://hackthecrous.com"
           >
             Visit website
           </a>
          <a
             style={{ color: "#24EE76" , marginLeft: "30px"}}
-            href="https://github.com/Courtcircuits/HackTheCrous"
+            href="https://github.com/stars/Courtcircuits/lists/hack-the-crous"
           >
           Source code
           </a>
